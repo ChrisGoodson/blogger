@@ -1,8 +1,9 @@
-Rails.application.routes.draw do
-  resources :articles
+Blogger::Application.routes.draw do
+
   root to: 'articles#index'
   resources :articles do
-    resources :commentss
+    resources :comments
   end
   resources :tags
+
 end

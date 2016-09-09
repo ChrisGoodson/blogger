@@ -5,7 +5,7 @@ class TagsController < ApplicationController
   end
 
   def index
-    @tags = Tags.all
+    @tags = Tag.all
   end
-  
+
 end
